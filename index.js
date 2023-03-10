@@ -43,6 +43,7 @@ contaCorrenteJanaina.sacar(50);
 console.log(contaCorrenteJanaina);
 console.log(contaCorrenteJanaina);
 console.log(contaCorrenteJanaina);
+console.log(contaCorrenteJanaina);
 
 
 // console.log(cliente1);
