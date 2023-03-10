@@ -11,14 +11,14 @@ class ContaCorrente{
 
     //encapsular dentro de um metodo
     sacar(valor){ ///operação de saque do valor que deseja 
-        if(this.saldo >= valor){ //this - dessa conta corrente
-            this.saldo -= valor;
+        if(this.#saldo >= valor){ //this - dessa conta corrente
+            this.#saldo -= valor;
         }
     }     
 
         depositar(valor){
         if(valor >0){
-            this.saldo += valor;
+            this.#saldo += valor;
             }
         }
 }
@@ -34,7 +34,7 @@ cliente2.nome = "Alice"; //nome davariavel. atributo
 cliente2.cpf= 12255533385;
 
 const contaCorrenteJanaina = new ContaCorrente();
-contaCorrenteJanaina.saldo = 10000;
+contaCorrenteJanaina.#saldo = 10000;
 contaCorrenteJanaina.agencia = 1001;
 
 contaCorrenteJanaina.depositar (100);
