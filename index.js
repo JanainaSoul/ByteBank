@@ -45,6 +45,7 @@ console.log(contaCorrenteJanaina);
 console.log(contaCorrenteJanaina);
 console.log(contaCorrenteJanaina);
 console.log(contaCorrenteJanaina);
+console.log(contaCorrenteJanaina);
 
 
 // console.log(cliente1);
