@@ -42,6 +42,18 @@ Tipos de valor e tipos de referência
 
 Alterando dinamicamente um objeto
 
+04 - Acessando Aributos Privados:
+
+Diferenças entre null e undefined
+
+Aprofundando nos conceitos de referências a um espaço de memória
+
+Get e Set
+
+Melhor encapsulamento da classe
+
+Protegendo atributos sensíveis
+
 
 
 # Links
