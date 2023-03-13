@@ -101,10 +101,14 @@ Como essas variáveis são links para espaços na memória, dizemos que elas sã
 
 Caso você queira ver em detalhes como essa operação de alocação de memória é feita, leia esse artigo (https://medium.com/reactbrasil/como-o-javascript-funciona-gerenciamento-de-mem%C3%B3ria-como-lidar-com-4-vazamentos-comuns-de-5cfa341b9e39) sobre o modelo de gerenciamento de memória do JavaScript.
 
-Jogos para aprender JavaScript
+**Jogos para aprender JavaScript**
 
 https://lab.reaal.me/jsrobot/
 
 https://screeps.com/
 
 https://checkio.org/
+
+**Organize seu código Javascript de maneira fácil!
+
+https://www.alura.com.br/artigos/organize-seu-codigo-javascript-de-maneira-facil
