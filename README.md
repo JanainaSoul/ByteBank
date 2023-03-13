@@ -6,6 +6,8 @@ JavaScript
 
 # Aprendizados
 
+# Curso de JavaScript: programando a Orientação a Objetos
+
 01 - Repetição de código:
 
 Criando classes
@@ -64,6 +66,19 @@ Atributos "readonly"
 
 Atributos estáticos
 
+# Curso de JavaScript: interfaces e Herança em Orientação a Objetos
+
+01 - Conhecnedo o Problema do Cliente:
+
+Relembramos conceitos de classe, propriedades e métodos
+
+Boas práticas na hora de declarar atributos
+
+Declarando sempre as propriedades como sendo privadas inicialmente
+
+Problemas de duplicação de código
+
+Problemas de código extremamente compartilhado
 
 
 # Links
