@@ -1,11 +1,33 @@
-export class ContaCorrente{ //dentro da classe é atributo pode publico ou privado
+import { Cliente } from "./Cliente.js";
+
+export class ContaCorrente{ //dentro da classe é atributo pode publico ou privado // aqui eu quero que guarde os dados da conta -agencia, cliente
+    static numeroDeContas = 0; //desse jeito esse atributo so pertence a esse objeto 
     agencia;
-    cliente;
-
-
-    //#saldo = 0 - https://github.com/tc39/proposal-class-fields#private-fields
+    _cliente; //atributo privado
+       //#saldo = 0 - https://github.com/tc39/proposal-class-fields#private-fields
     _saldo = 0;
 
+    //assesores
+    set cliente(novoValor) {  //atribuir, colocar um valor
+        if(novoValor instanceof Cliente){ //proteger - aqui é um assessor tipo set
+            this._cliente = novoValor;
+        }
+    } 
+
+    get cliente(){
+        return this._cliente;
+    }
+
+    get saldo(){
+        return this._saldo; // vc consegue proteger o atributo e so dar acesso ao que queremos
+    }
+
+    constructor(agencia, cliente){ //pode usar os assesores aqui
+        this.agencia = agencia;
+        this.cliente = cliente;
+        ContaCorrente.numeroDeContas += 1;
+
+    }
 
     //encapsular dentro de um metodo que pode ser repetido
     sacar(valor){ ///operação de saque do valor que deseja 
