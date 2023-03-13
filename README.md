@@ -54,6 +54,16 @@ Melhor encapsulamento da classe
 
 Protegendo atributos sensíveis
 
+05 - Cosntrutores e estaticos:
+
+Construtores
+
+Encapsulamento
+
+Atributos "readonly"
+
+Atributos estáticos
+
 
 
 # Links
