@@ -1,25 +1,18 @@
-import {Cliente} from "./Cliente.js"
-import {ContaCorrente} from "./ContaCorrente.js"
+import {Cliente} from "./Cliente.js";
+import {ContaCorrente} from "./ContaCorrente.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
 
-const cliente1 = new Cliente ("Janaina", 11155533385); //cada new Cliente é um objeto - instaciando a classe // 
-const cliente2 = new Cliente ("Alice",12255533385); // aqui  usamos o consrutor
+const cliente1 = new Cliente("Ricardo", 11122233309);
 
-//let numeroDeContas = 0; // essa abordagem deixa o codigo fragil, tem que ir pro construtor
+const contaCorrenteRicardo = new ContaCorrente( cliente1, 1001);
+contaCorrenteRicardo.depositar(500);
+contaCorrenteRicardo.sacar(100);
 
-const contaCorrenteJanaina = new ContaCorrente(1001, cliente1); //usa o construtor aqui
-//numeroDeContas++; // essa abordagem deixa o codigo fragil, alguem pode esquecer de incluir essa linha, e assim nosso numeros de contas não estará certo , isso tem q ir la pro construtor
-new ContaCorrente(1001, cliente1);
-new ContaCorrente(1001, cliente1);
-contaCorrenteJanaina.depositar(500);
+const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
+contaPoupanca.sacar(10);
 
-const valorSacado = contaCorrenteJanaina.sacar(50);
-const conta2 = new ContaCorrente(102, cliente2); //instaciando um novo cliente 
-//numeroDeContas++; foi la pro construtor
 
-let valor = 200; // valor primitivo - vc passa uma cópia
-contaCorrenteJanaina.transferir(valor, conta2);
+console.log(contaPoupanca);
+console.log(contaCorrenteRicardo);
 
-console.log(contaCorrenteJanaina);
-console.log(conta2);
 
-console.log(ContaCorrente.numeroDeContas); 
