@@ -1,33 +1,5 @@
-class Cliente { //molde do cliente
-    nome;
-    cpf;
-    rg;
-    
-}
-
-class ContaCorrente{
-    agencia;
-    //#saldo = 0 - https://github.com/tc39/proposal-class-fields#private-fields
-    _saldo = 0;
-
-    //encapsular dentro de um metodo
-    sacar(valor){ ///operação de saque do valor que deseja 
-        if(this._saldo >= valor){ //this - dessa conta corrente
-            this._saldo -= valor;
-            return valor;
-        }
-    }     
-
-        depositar(valor){
-        if(valor <= 0)
-        {
-            return;
-                
-        }
-            this._saldo += valor;  // console.log(this._saldo); // ele não fica exposto p/ ninguem mexer
-        }
-}
-
+import {Cliente} from "./Cliente.js"
+import {ContaCorrente} from "./ContaCorrente.js"
 
 const cliente1 = new Cliente (); //cada new Cliente é um objeto - instaciando a classe // 
 cliente1.nome = "Janaina"; //nome da variavel.atributo
@@ -41,15 +13,24 @@ cliente2.cpf= 12255533385;
 const contaCorrenteJanaina = new ContaCorrente();
 // contaCorrenteJanaina.#saldo = 10000;
 contaCorrenteJanaina.agencia = 1001;
+contaCorrenteJanaina.cliente = cliente1;
+contaCorrenteJanaina.depositar(500);
 
-contaCorrenteJanaina.depositar (-100);
-contaCorrenteJanaina.depositar (100);
-contaCorrenteJanaina.depositar (100);
 
 const valorSacado = contaCorrenteJanaina.sacar(50);
-console.log(valorSacado);
 
-console.log(contaCorrenteJanaina);
+const conta2 = new ContaCorrente();
+conta2.cliente = cliente2;
+conta2.agencia = 102;
+
+let valor = 200; // valor primitivo - vc passa uma cópia
+contaCorrenteJanaina.transferir(valor, conta2);
+
+console.log("valor: ", valor);
+console.log(conta2);
+
+
+
 
 
 
