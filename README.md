@@ -109,6 +109,6 @@ https://screeps.com/
 
 https://checkio.org/
 
-**Organize seu código Javascript de maneira fácil!
+**Organize seu código Javascript de maneira fácil!**
 
 https://www.alura.com.br/artigos/organize-seu-codigo-javascript-de-maneira-facil
