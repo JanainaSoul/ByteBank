@@ -32,3 +32,6 @@ Return e early return
 
 # Links
 
+package.json -> https://www.npmjs.com/
+
+https://docs.npmjs.com/cli/v9/using-npm/scripts
