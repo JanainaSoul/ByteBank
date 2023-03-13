@@ -7,19 +7,24 @@ class Cliente { //molde do cliente
 
 class ContaCorrente{
     agencia;
-    #saldo = 0;
+    //#saldo = 0 - https://github.com/tc39/proposal-class-fields#private-fields
+    _saldo = 0;
 
     //encapsular dentro de um metodo
     sacar(valor){ ///operação de saque do valor que deseja 
-        if(this.#saldo >= valor){ //this - dessa conta corrente
-            this.#saldo -= valor;
+        if(this._saldo >= valor){ //this - dessa conta corrente
+            this._saldo -= valor;
+            return valor;
         }
     }     
 
         depositar(valor){
-        if(valor >0){
-            this.#saldo += valor;
-            }
+        if(valor <= 0)
+        {
+            return;
+                
+        }
+            this._saldo += valor;  // console.log(this._saldo); // ele não fica exposto p/ ninguem mexer
         }
 }
 
@@ -34,18 +39,18 @@ cliente2.nome = "Alice"; //nome davariavel. atributo
 cliente2.cpf= 12255533385;
 
 const contaCorrenteJanaina = new ContaCorrente();
-contaCorrenteJanaina.#saldo = 10000;
+// contaCorrenteJanaina.#saldo = 10000;
 contaCorrenteJanaina.agencia = 1001;
 
+contaCorrenteJanaina.depositar (-100);
 contaCorrenteJanaina.depositar (100);
-contaCorrenteJanaina.sacar(50);
+contaCorrenteJanaina.depositar (100);
+
+const valorSacado = contaCorrenteJanaina.sacar(50);
+console.log(valorSacado);
 
 console.log(contaCorrenteJanaina);
-console.log(contaCorrenteJanaina);
-console.log(contaCorrenteJanaina);
-console.log(contaCorrenteJanaina);
-console.log(contaCorrenteJanaina);
-console.log(contaCorrenteJanaina);
+
 
 
 // console.log(cliente1);
