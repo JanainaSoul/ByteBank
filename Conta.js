@@ -4,6 +4,7 @@ export class Conta{
         this._cliente = cliente;
         this._agencia = agencia;
         this._tipo = tipo;
+        
         if(this.constructor == Conta){
             console.log("Você não deveria instaciar um objeto do tipo conta")
         }
