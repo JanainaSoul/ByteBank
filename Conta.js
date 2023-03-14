@@ -1,5 +1,5 @@
 export class Conta{
-    constructor(tipo, saldoInicial, cliente, agencia){
+    constructor(saldoInicial, cliente, agencia, tipo){
         this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;
@@ -25,10 +25,7 @@ sacar(valor){
 
     let taxa = 1;
     const valorSacado = taxa * valor; // taxa da conta corrente
-    if(this._saldo >= valorSacado){
-        this._saldo -= valorSacado;
         return valorSacado;
-    }
 }
 
 depositar(valor){
@@ -36,9 +33,9 @@ depositar(valor){
 }
 
 tranferir(valor, conta){
-    if(this._tipo == "salario"){
-        return;
-    }
+    // if(this._tipo == "salario"){
+    //     return;
+    // }
     const valorSacado = this.sacar(valor);
     conta.depositar(valorSacado);
     }
