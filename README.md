@@ -80,6 +80,24 @@ Problemas de duplicação de código
 
 Problemas de código extremamente compartilhado
 
+02 - Herança:
+
+Especializando código
+
+Herdando propriedades e atributos
+
+Sobrescrita de métodos
+
+Compartilhando código de forma segura
+
+Mantendo nosso código na linguagem do cliente
+
+Evitando código muito complicado através da herança
+
+Palavra-chave Super
+
+Método e propriedades privadas e protegidas
+
 
 # Links
 
