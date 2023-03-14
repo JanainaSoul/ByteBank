@@ -4,6 +4,9 @@ export class Conta{
         this._cliente = cliente;
         this._agencia = agencia;
         this._tipo = tipo;
+        if(this.constructor == Conta){
+            console.log("Você não deveria instaciar um objeto do tipo conta")
+        }
     }
 
     //assesores -> trazendo os assessores da conta corrente pra conta
@@ -36,12 +39,6 @@ sacar(valor){
         }
         return 0;
     }
-// sacar(valor, taxa){
-//     let taxa = 1;
-
-//     }
-//     return 0;
-// }
 
 
 depositar(valor){
@@ -49,16 +46,10 @@ depositar(valor){
 }
 
 tranferir(valor, conta){
-    // if(this._tipo == "salario"){
-    //     return;
-    // }
     const valorSacado = this.sacar(valor);
     conta.depositar(valorSacado);
     }
 
-//     teste(){
-//         console.log("teste na classe conta")
-//     }
 
 
 

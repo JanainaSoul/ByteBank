@@ -8,20 +8,9 @@ export class ContaCorrente extends Conta{ //herdando de conta - isso q chama de 
         ContaCorrente.numeroDeContas += 1;
     }
 
-        // teste(){
-        //     super.teste();
-        //     console.log("teste na classe conta corrente")
-        // }
-
-        //sobreescrevendo o comportamento de sacar
+    //sobreescrevendo o comportamento de sacar
         sacar(valor) {
             let taxa = 1.1;
             return this._sacar(valor, taxa);
-        //     const valorSacado = taxa * valor;
-        //     if (this.saldo >= valorSacado){
-        //         this._saldo -= valorSacado;
-        //         return valorSacado;
-        //     }
-            
-        }
+    }
 }
