@@ -112,6 +112,16 @@ Métodos abstratos
 
 Erros em tempo de execução
 
+04 - Sistema interno:
+
+Revisão de herança,boas práticas de código e encapsulamento
+
+Polimorfismo
+
+Métodos estáticos
+
+Maneiras de tratar objetos de diferentes tipos de maneira parecida
+
 # Links
 
 package.json -> https://www.npmjs.com/ e https://docs.npmjs.com/cli/v9/using-npm/scripts
