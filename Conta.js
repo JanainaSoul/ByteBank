@@ -1,14 +1,19 @@
+// classe abstrada 
+
 export class Conta{
     constructor(saldoInicial, cliente, agencia, tipo){
+    if(this.constructor == Conta){ // -> herança -isso ainda permite o desenvolvedor chamar essa classe -> classe abstrata
+        throw new Error("Você não deveria instaciar um objeto do tipo Conta diretamente, pois essa é uma classe abstrata."); // classe para erros
+    }
+
         this._saldo = saldoInicial;
         this._cliente = cliente;
         this._agencia = agencia;
         this._tipo = tipo;
         
-        if(this.constructor == Conta){
-            console.log("Você não deveria instaciar um objeto do tipo conta")
+    
         }
-    }
+    
 
     //assesores -> trazendo os assessores da conta corrente pra conta
     set cliente(novoValor) {  //atribuir, colocar um valor
@@ -25,10 +30,12 @@ export class Conta{
         return this._saldo; // vc consegue proteger o atributo e so dar acesso ao que queremos
     }
 
-sacar(valor){
 
-    let taxa = 1;
-    return this._sacar(valor, taxa);
+//metodo abstrato
+sacar(valor){ //metodo abtrato - feito para ser sobreescrito sempre
+
+    // let taxa = 1;
+    // return this._sacar(valor, taxa);
 
 }
 
