@@ -8,9 +8,12 @@ export class Cliente { //molde do cliente // aqui eu quero que guarde na memoria
         return this._cpf; //somente para consulta sem o return ele retorna undefined, com o return vc acessa
     }
 
-    constructor(nome,cpf){ //construtores
+    constructor(nome,cpf, senha){ //construtores
         this.nome = nome;
         this._cpf = cpf;
+        this._senha = senha;
 
     }
+
+    
 }

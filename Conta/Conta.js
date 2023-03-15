@@ -32,10 +32,9 @@ export class Conta{
 
 
 //metodo abstrato
-sacar(valor){ //metodo abtrato - feito para ser sobreescrito sempre
-
-    // let taxa = 1;
-    // return this._sacar(valor, taxa);
+sacar(valor){ //metodo abtrato - feito para ser sobreescrito sempre - ele não vai ter nada
+    throw new Error("O método Sacar da Conta é abstrato") // 
+    
 
 }
 

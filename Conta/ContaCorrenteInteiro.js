@@ -1,4 +1,4 @@
-import { Cliente } from "./Cliente.js";
+import { Cliente } from "../Cliente.js";
 
 export class ContaCorrente extends Conta{ //dentro da classe é atributo pode publico ou privado // aqui eu quero que guarde os dados da conta -agencia, cliente
     static numeroDeContas = 0; //desse jeito esse atributo so pertence a esse objeto 
