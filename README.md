@@ -98,6 +98,19 @@ Palavra-chave Super
 
 Método e propriedades privadas e protegidas
 
+03 - Classes abstratas:
+
+Como o JS sabe quem está sendo instanciado.
+
+Pensando na proteção do nosso sistema
+
+Lançando erros para o sistema
+
+Classes abstratas
+
+Métodos abstratos
+
+Erros em tempo de execução
 
 # Links
 
