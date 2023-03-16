@@ -122,6 +122,18 @@ Métodos estáticos
 
 Maneiras de tratar objetos de diferentes tipos de maneira parecida
 
+05 - Intrefaces e Duck Type
+
+operador in
+
+operador instanceOf
+
+Como proteger nossos sistemas
+
+interfaces padronizadas
+
+Ducky Type
+
 # Links
 
 package.json -> https://www.npmjs.com/ e https://docs.npmjs.com/cli/v9/using-npm/scripts
