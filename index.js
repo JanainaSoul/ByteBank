@@ -30,9 +30,12 @@ gerente.cadastrarSenha("123");
 const cliente = new Cliente("Lais", 78945612379, "456")
 const gerenteEstaLogado = SistemaAutenticação.login(diretor, "123456");//ele não espera classe especifica
 const diretorEstaLogado = SistemaAutenticação.login(gerente, "123");
+
+const clienteEstaLogado = SistemaAutenticação.login(cliente, "456");
+
 console.log(gerenteEstaLogado, diretorEstaLogado, clienteEstaLogado);
 
 
-const clienteEstaLogado = SistemaAutenticação.login(cliente, "456");
+
 
 

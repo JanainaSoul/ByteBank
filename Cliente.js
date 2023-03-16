@@ -12,8 +12,13 @@ export class Cliente { //molde do cliente // aqui eu quero que guarde na memoria
         this.nome = nome;
         this._cpf = cpf;
         this._senha = senha;
-
     }
+
+        autenticar(){
+            return true;
+
+        }
+    
 
     
 }

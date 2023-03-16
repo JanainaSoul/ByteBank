@@ -1,5 +1,7 @@
 /*
 ser autenticavel significa ter o metodo autenticar
+
+duck type é comum em linguagens fracamente tipada
 */ 
 
 export class SistemaAutenticação{
@@ -10,7 +12,8 @@ export class SistemaAutenticação{
         return false;
     }
 
-    static ehAutenticavel(autenticavel){
-        
+    static ehAutenticavel(autenticavel){ //pode chamar diretamente - não precisa criar instancia
+        return "autenticar" in autenticavel && //operador IN  
+        autenticavel.autenticar instanceof Function        
     }
 }
