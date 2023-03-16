@@ -180,3 +180,7 @@ https://checkio.org/
 **Organize seu código Javascript de maneira fácil!**
 
 https://www.alura.com.br/artigos/organize-seu-codigo-javascript-de-maneira-facil
+
+**Herança em JavaScript**
+
+https://www.alura.com.br/artigos/heranca-em-javascript#:~:text=Em%2520linguagens%2520orientadas%2520a%2520objetos,alguma%2520maneira%2520de%2520estend%25C3%25AA%252Dlas.
